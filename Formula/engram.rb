@@ -7,20 +7,20 @@ class Engram < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "eea30247fe57bb982d3f63a01d5e99344a4560004ec726c44064f7f22ea7f61a"
+      sha256 "6f174f3d06dc1c36477f961cbfb2628d165da5474ea1b7967510b5b8e48e7903"
     else
       url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "9f073c90e9e5070ec65e32575bd0cbb465f51d2bf2e1fd06e030bf84a2d87483"
+      sha256 "5f932acb5264fcfc99c6e6139a53da9ba50713e21e2c1cf6376351f23ed76d03"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "530c92bcc516d0f18706f83606e6275816a28ddd4d3281c93eec9c18050e8628"
+      sha256 "a1c80752b11ac4ee7e58f2d56c4add5120d4239b8cee94f82dc3667d346d0046"
     else
       url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f81c900dc8c20d8ddd53abf29c68bc85eac71f08b442779b21eed17d60da8510"
+      sha256 "b4f6a8e72b91516798a3b2595ba318d15cc3881e62d88efb06156839771ed70f"
     end
   end
 
