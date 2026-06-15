@@ -1,26 +1,26 @@
 class Engram < Formula
   desc "Memory for production AI agents - hybrid search, knowledge graphs, MCP protocol"
-  homepage "https://github.com/limaronaldo/engram"
-  version "0.15.0"
+  homepage "https://github.com/aiconnai/engram"
+  version "0.21.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/limaronaldo/engram/releases/download/v#{version}/engram-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "3d631addccab4bae1a7ce894097d1e6513e72c58a9cd406aa58888f8c0059c9f"
+      url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 "eea30247fe57bb982d3f63a01d5e99344a4560004ec726c44064f7f22ea7f61a"
     else
-      url "https://github.com/limaronaldo/engram/releases/download/v#{version}/engram-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "9e2e1c6c681aaca5e1b17030b1ea340da8ab030dcd1a8c37e0c4f8d7ba8f9d5e"
+      url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 "9f073c90e9e5070ec65e32575bd0cbb465f51d2bf2e1fd06e030bf84a2d87483"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/limaronaldo/engram/releases/download/v#{version}/engram-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9d9fe610b83d31cc5402a37b8da112de4bb226bea76945b969b70d6906b4a2e6"
+      url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "530c92bcc516d0f18706f83606e6275816a28ddd4d3281c93eec9c18050e8628"
     else
-      url "https://github.com/limaronaldo/engram/releases/download/v#{version}/engram-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fa95aaefed00cadf3980a4032ac205f5befa5bead7233171340651ca57187c08"
+      url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f81c900dc8c20d8ddd53abf29c68bc85eac71f08b442779b21eed17d60da8510"
     end
   end
 
