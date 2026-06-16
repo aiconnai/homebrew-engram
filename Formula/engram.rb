@@ -1,26 +1,26 @@
 class Engram < Formula
   desc "Memory for production AI agents - hybrid search, knowledge graphs, MCP protocol"
   homepage "https://github.com/aiconnai/engram"
-  version "0.21.1"
+  version "0.21.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "017842f8a1deaa711c6644eef71c84a3103928f080fef36617b0413b6ea9cdee"
+      sha256 "0c1ac606c4644bafcea8efcd59e82c1dc468717977a41ee58d1d14f4a74dc770"
     else
       url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "453f5aa97910dee37f275034f23b9769486e73ef364d44c8594cf9fa267a6c7b"
+      sha256 "7a243381467d6c882abd12c7f2ccc7a9c7964a3616321189494478568e5474ea"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e0a7a166e20966ad0714d7ba07d0ff62fdc05ba8017746160bbc5721a2e6dc90"
+      sha256 "9203c3b4fd4bc5b0abb374b0051a96ce31e085147e9547b8dc10f4fc6201b74a"
     else
       url "https://github.com/aiconnai/engram/releases/download/v#{version}/engram-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e5afc71d2964cf8e121ceabeca9ed6a322907b8f041fc129556e784e9f95609f"
+      sha256 "cb24d18342f053b232476030bbdc25f71ce729a2f92b7cfd3ef2928b2ec39c70"
     end
   end
 
